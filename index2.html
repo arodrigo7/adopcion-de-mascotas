@@ -4,69 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
     <title>OBJETOS</title>
 </head>
 <body>
-    <h1>objetos</h1>
-<script>   
-    
-let mascota = {
-        nombre : 'chesnout',
-        color_pelo: 'blanco',
-        peso:72,
-        altura:50,
-        saludar: function saluda(){
-            return this.altura + "cm";
-        }
-}
-console.log(mascota);
-
-let mascota2 = {
-        nombre : 'firulais',
-        color_pelo: 'negro',
-        peso:50,
-        altura:40,
-}
-//mascota2.nombre= "firulais2"
-console.log(mascota2);
-//console.log(mascota.nombre);
-console.log(mascota2.nombre);
-console.log(mascota.saludar());
-
-class Mascota {
-    constructor( nombre, color_pelo,peso,altura){
-        this.nombre=nombre;
-        this.color_pelo=color_pelo;
-        this.peso=peso;
-        this.altura=altura;
-    }
-    nombreComnpleto(){
-        return this.nombre + ' ' + this.color_pelo
-    }
-    altura_en_cm(){
-        return this.altura +  ' cm.'
-    }
-}
-
-mascota3= new Mascota ("chochi","marron",71,60);
-mascota4=new Mascota("pirulo","marron caca",30,20);
-console.log(mascota3);
-console.log(mascota4);
-console.log(Mascota);
-cantMascotas=[];
-dato=mascota3
-dato2=mascota4
-cantMascotas.push(dato);
-cantMascotas.push(dato2);
-console.log(cantMascotas);
-console.log(cantMascotas[0].nombre);
-console.log(mascota4.altura_en_cm());
-console.log(mascota4.nombreComnpleto());
-console
-console.log(Mascota.altura);
-
-
-</script> 
-
+    <h1>Macotas</h1>
+<input type="button" value="Agregar mascota" onclick="cargar_perro()">
+<br>
+<input type="button" value="informe de perros en adopción" onclick="cantEnAdopcion()">
 </body>
 </html>
